@@ -1,7 +1,8 @@
 require 'sinatra'
 
+
 get '/' do
-	"<strong>Hi Strong</strong>"
+	File.open('public/hello.txt', 'r')
 end
 
 get '/sinatra' do
